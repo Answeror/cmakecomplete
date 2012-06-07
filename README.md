@@ -6,7 +6,7 @@ Use `<c-x><c-o>` in insert mode to see completions.
 
 Use `K` in normal mode to see documents and can be customed by:
 
-```cmake
+```
 au FileType cmake nmap <buffer> <silent> <unique> T <Plug>CMakeCompleteHelp
 ```
 
