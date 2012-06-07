@@ -24,3 +24,7 @@
 """
 command -nargs=* -complete=customlist,cmakecomplete#HelpComplete  CMakeHelp call cmakecomplete#Help(<f-args>)
 autocmd FileType cmake set omnifunc=cmakecomplete#Complete
+
+" mappings {{{
+    nnoremap <unique> <script> <Plug>CMakeCompleteHelp :call cmakecomplete#Help(expand("<cword>"))<CR>
+" }}}
